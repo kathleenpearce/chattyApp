@@ -1,4 +1,4 @@
-export default const generateRandomId = (alphabet => {
+export const generateRandomId = (alphabet => {
  const alphabetLength = alphabet.length;
  const randoIter = (key, n) => {
    if (n === 0) {

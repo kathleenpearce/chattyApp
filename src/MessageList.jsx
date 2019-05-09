@@ -3,8 +3,8 @@ import Message from './Message.jsx';
 
 function MessageList (props){
 
-    const listMessages = props.messages.map((messageX =>
-      <Message message={messageX} key={messageX.id}/>
+    const listMessages = props.messages.map(((message, i) =>
+      <Message message={message} key={message.id}/>
 
     ));
 
