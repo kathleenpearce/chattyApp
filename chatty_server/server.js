@@ -23,15 +23,39 @@ wss.on('connection', (ws) => {
  ws.on('message', (message) => {
    const messageObject = JSON.parse(message)
    console.log("Got a new message: ", messageObject);
-   wss.clients.forEach(function each(client) {
-     if (client.readyState === ws.OPEN) {
-      const messageString = JSON.stringify({id: uuidv1(), username: messageObject.username, content: messageObject.content})
-      console.log('messageString', messageString)
-       client.send(messageString);
-     }
-   });
+
+
+  switch(messageObject.type) {
+    case "postMessage":
+      wss.clients.forEach(function each(client) {
+        if (client.readyState === ws.OPEN) {
+        const messageString = JSON.stringify({type: "incomingMessage", id: uuidv1(), username: messageObject.username, content: messageObject.content})
+        console.log('messageString', messageString)
+        client.send(messageString);
+        }
+      });
+        break;
+
+      case "postNotification":
+        wss.clients.forEach(function each(client) {
+          if (client.readyState === ws.OPEN) {
+          const messageString = JSON.stringify({type: "incomingNotification", content: messageObject.content})
+          console.log('messageString', messageString)
+          client.send(messageString);
+           }
+         });
+         break;
+      default:
+        // show an error in the console if the message type is unknown
+        console.log(messageObject.type)
+        throw new Error("Unknown event type " + message.type);
+    }
+
+
+
  });
 
  // Set up a callback for when a client closes the socket. This usually means they closed their browser.
  ws.on('close', () => console.log('Client disconnected'));
 });
+

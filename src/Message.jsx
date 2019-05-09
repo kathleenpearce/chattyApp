@@ -10,6 +10,10 @@ function Message (props) {
     <span className="message-username">{props.message.username}</span>
     <span className="message-content">{props.message.content}</span>
     </div>
+
+
+
+
     );
 
 }
