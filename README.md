@@ -7,7 +7,7 @@ A single page web application serving as a chatroom where users can send message
 _*Here are some screenshots of what "ChattyApp" looks like.*_
 
 ## _Here is ChattyApp when a single user goes onto the page_
-![Alt text](hhttps://github.com/kathleenpearce/chattyApp/blob/master/chatty%20app%20first%20page.png?raw=true)
+![Alt text](https://github.com/kathleenpearce/chattyApp/blob/master/chatty%20app%20first%20page.png?raw=true)
 
 ## _Here is ChattyApp when a second user enters a chatroom!_
 ![Alt text](https://github.com/kathleenpearce/chattyApp/blob/master/chattyapp%20second%20page.png?raw=true)
