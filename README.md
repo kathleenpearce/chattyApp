@@ -1,5 +1,4 @@
-ChattyApp
-=====================
+# **🗣️ ChattyApp 🗣️**
 
 A single page web application serving as a chatroom where users can send messages back and forth to each other in real time.
 
