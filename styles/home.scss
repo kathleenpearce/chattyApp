@@ -93,11 +93,17 @@ h1 {
 
     .notification {
       color: red;
-      margin-left: 50px;
+      text-align: center;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 16px;
 
     }
 
     .user-counter {
     float: right;
-    font-style: bold;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+
     }
