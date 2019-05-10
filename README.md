@@ -4,14 +4,13 @@ ChattyApp
 A single page web application serving as a chatroom where users can send messages back and forth to each other in real time.
 
 ## Final Product
-_*Here is an example of what "ChattyApp" looks like when a single user goes onto the page*_
+_*Here are some screenshots of what "ChattyApp" looks like.*_
 
+## _Here is ChattyApp when a single user goes onto the page_
+![Alt text](hhttps://github.com/kathleenpearce/chattyApp/blob/master/chatty%20app%20first%20page.png?raw=true)
 
-_*Here is an example of what "ChattyApp" looks like when another user has entered the chatroom*_
-
-
-
-
+## _Here is ChattyApp when a second user enters a chatroom!_
+![Alt text](https://github.com/kathleenpearce/chattyApp/blob/master/chattyapp%20second%20page.png?raw=true)
 
 
 ## Getting Started
